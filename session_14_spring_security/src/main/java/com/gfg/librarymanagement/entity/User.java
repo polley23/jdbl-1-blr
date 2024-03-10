@@ -19,6 +19,6 @@ public class User {
     private FineAmount fineAmount;
     @ManyToOne(fetch = FetchType.EAGER)
     private Book book;
-    @OneToOne(mappedBy = "user", cascade = CascadeType.ALL, f)
+    @OneToOne(mappedBy = "user", cascade = CascadeType.ALL)
     private BorrowHistory borrowHistory;
 }
